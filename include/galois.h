@@ -96,5 +96,7 @@ gf_t* galois_init_composite_field(int w,
 
 gf_t * galois_get_field_ptr(int w);
 
+void galois_exit();
+
 
 #endif

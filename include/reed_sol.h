@@ -48,3 +48,4 @@ extern int *reed_sol_r6_coding_matrix(int k, int w);
 extern void reed_sol_galois_w08_region_multby_2(char *region, int nbytes);
 extern void reed_sol_galois_w16_region_multby_2(char *region, int nbytes);
 extern void reed_sol_galois_w32_region_multby_2(char *region, int nbytes);
+void reed_sol_exit();

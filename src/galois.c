@@ -201,6 +201,17 @@ static void galois_init(int w)
   }
 }
 
+void galois_exit()
+{
+	int i = 0;
+	for (; i < MAX_GF_INSTANCES; i++) {
+		if (gfp_array[i]) {
+			gf_free(gfp_array[i], gfp_is_composite[i]);
+			free(gfp_array[i]);
+			gfp_array[i] = NULL;
+		}
+	}
+}
 
 static int is_valid_gf(gf_t *gf, int w)
 {

@@ -300,3 +300,7 @@ int *reed_sol_big_vandermonde_distribution_matrix(int rows, int cols, int w)
   return dist;
 }
 
+void
+reed_sol_exit() {
+	galois_exit();
+}
